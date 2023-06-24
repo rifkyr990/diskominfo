@@ -1,0 +1,184 @@
+a {
+    color: white !important;
+}
+
+.square {
+    width: 120px;
+    height: 120px;
+    background-color: #555;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+}
+
+.bg-col {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: #712cf9 !important;
+    opacity: 0.5;
+    border: 1px solid #712cf9 !important;
+}
+
+.bg-bikinan {
+    width: 100%;
+    background-color: grey;
+}
+a.dropdown-item {
+    background-color: green !important;
+}
+
+ul.dropdown-menu.show {
+    background-color: green !important;
+}
+#pop-up {
+    width: 100vw;
+    margin-top: 50px;
+}
+#pop-up #row {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+}
+#isi {
+    /* width: 150px;
+    height: 150px; */
+    display: grid;
+    text-align: center;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20%;
+}
+#isi img {
+    width: 100px;
+}
+#footer {
+    background-color: green;
+    width: 100vw;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    /* border: 1px solid black; */
+    padding: 8px;
+}
+/* Data */
+#output {
+    display: none;
+    position: absolute;
+    width: 50vw;
+    top: 10vh;
+    left: 25vw;
+    z-index: 15;
+    background-color: #afd3ae;
+    border: 1px solid black;
+    padding: 10px;
+}
+/* chart */
+#output2 {
+    display: none;
+    position: absolute;
+    width: 50vw;
+    top: 10vh;
+    left: 25vw;
+    z-index: 5;
+    background-color: #afd3ae;
+    border: 1px solid black;
+    padding: 10px;
+}
+/* faq */
+#output3 {
+    display: none;
+    position: absolute;
+    width: 50vw;
+    top: 10vh;
+    left: 25vw;
+    z-index: 5;
+    background-color: #afd3ae;
+    border: 1px solid black;
+    padding: 10px;
+}
+/* form */
+#output4 {
+    display: none;
+    position: absolute;
+    width: 50vw;
+    top: 10vh;
+    left: 25vw;
+    z-index: 5;
+    background-color: #afd3ae;
+    border: 1px solid black;
+    padding: 10px;
+}
+/* layanan */
+#output5 {
+    display: none;
+    position: absolute;
+    width: 50vw;
+    top: 10vh;
+    left: 25vw;
+    z-index: 5;
+    background-color: #afd3ae;
+    border: 1px solid black;
+    padding: 10px;
+}
+/* hukum */
+#output6 {
+    display: none;
+    position: absolute;
+    width: 50vw;
+    top: 10vh;
+    left: 25vw;
+    z-index: 6;
+    background-color: #afd3ae;
+    border: 1px solid black;
+    padding: 10px;
+}
+#searchInput {
+    margin-bottom: 10px;
+}
+#chart {
+    width: auto;
+    height: 300px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 480px) {
+    #pop-up {
+        background-color: antiquewhite;
+        width: 100vw;
+    }
+    #pop-up #row {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    #isi {
+        width: 140px;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 20%;
+    }
+    #isi img {
+        width: 100px;
+    }
+}

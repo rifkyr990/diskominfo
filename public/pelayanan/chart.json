@@ -1,0 +1,26 @@
+[
+    {
+        "nama": "Andy",
+        "gaji": 1000
+    },
+    {
+        "nama": "Bob",
+        "gaji": 800
+    },
+    {
+        "nama": "Charlie",
+        "gaji": 1200
+    },
+    {
+        "nama": "Dave",
+        "gaji": 1500
+    },
+    {
+        "nama": "Eva",
+        "gaji": 2000
+    },
+    {
+        "nama": "Fiona",
+        "gaji": 1600
+    }
+]
