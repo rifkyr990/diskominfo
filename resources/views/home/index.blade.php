@@ -69,14 +69,13 @@
 
         <div class="col-md-4">
             <div class="position-sticky" style="top: 2rem;">
-                <div class="p-4 mb-3 bg-#afd3ae rounded">
+                <div class="p-4 bg-#afd3ae rounded">
                     <h4 class="fst-italic fw-bold">Agenda</h4>
-                    <p class="mb-0"></p>
-                    <ul class="w3-ul w3-hoverable w3-white">
+                    <ul class="w3-ul w3-hoverable w3-white rounded">
                         @foreach($agendas as $agenda)
-                            <li class="w3-padding-5">
+                            <li class="w3 p-3">
                                 <img src="https://i.ibb.co/XYtPzBK/computer-icons-calendar-date-event-table-afcca780f848808400b0d4199518e260.png" alt="Image" class="w3-left w3-margin-right" style="width: 55px" />
-                                <span class="w3-medium fw-bold">{{$agenda->judul}}</span><br />
+                                <span class="w3-medium fw-bold"> <a href="{{route('agenda')}}" class="text-dark text-decoration-none">{{$agenda->judul}}</a></span><br />
                                 <span style="font-size: 10px;">{!! Str::limit($agenda->deskripsi) !!}</span>
                             </li>
                         @endforeach
@@ -85,12 +84,12 @@
 
                 <div class="p-4">
                     <h4 class="fst-italic fw-bold">Pemberitahuan</h4>
-                    <ul class="w3-ul w3-hoverable w3-white">
+                    <ul class="w3-ul w3-hoverable w3-white rounded">
                         @foreach($pengumumans as $pengumuman)
                             <li class="p-3">
                                 <i class="fa fa-warning"></i>
                                 <span class="w3-medium"><b>{{ $pengumuman->judul }}</b></span><br />
-                                <span class="">{!! Str::limit($pengumuman->deskripsi) !!}</span>
+                                <span class="" style="font-size: 10px;">{!! Str::limit($pengumuman->deskripsi) !!}</span>
                             </li>
                         @endforeach
                     </ul>
@@ -123,14 +122,11 @@
                     @foreach($artikel as $berita)
                         <div class="col-md-4 mb-3">
                             <a href="{{ route('artikel.show',$berita->slug) }}">
-                                <div class="card">
+                                <div class="card h-100">
                                     <img class="img-fluid" alt="100%x280" src="{{ asset($berita->getThumbnail()) }}">
                                     <div class="card-body">
-                                        <h4 class="card-title">{{ $berita->judul }}
+                                        <h4 class="card-title fw-bold">{{ $berita->judul }}
                                         </h4>
-                                        <!-- <div class="card-text mt-3">
-                                            {!! Str::limit($berita->deskripsi) !!}
-                                        </div> -->
                                     </div>
                                 </div>
 

@@ -19,7 +19,7 @@ class HomeController extends Controller
         
     	return view('home.index',[
             'agenda' => Agenda::latest()->take(5)->get(),
-            'artikel' => Artikel::with(['user','kategoriArtikel'])->latest()->take(4)->get(),
+            'artikel' => Artikel::with(['user','kategoriArtikel'])->latest()->take(3)->get(),
             'pengumuman' => Pengumuman::with(['user'])->latest()->take(5)->get(),
             'agendas' => Agenda::latest()->take(5)->get(),
             'pengumumans' => Pengumuman::latest()->get(),
